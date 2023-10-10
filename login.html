@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="email"],
+
+        .form-group input[type="password"],
+        .form-group textarea {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .btn {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2> Login as a customer</h2>
+        <form action="Wellcom.html">
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            
+            <input type="reset">
+            <button type="submit" class="btn">Submit</button>
+            <!-- <button type="reset" class="btn">Reset</button> -->
+            
+        </form>
+
+        <form >
+            <h2>Login as a Admin</h2>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            
+            <input type="reset">
+            <button type="submit" class="btn">Submit</button>
+            
+        </form>
+    </div>
+</body>
+</html>
